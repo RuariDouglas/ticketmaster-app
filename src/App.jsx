@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const apikey = "8X6HVGOGo28k9tEihXCuPGKj1ty0aMBd";
+  const apikey = import.meta.env.VITE_API_KEY;
   const dispatch = useDispatch();
 
   const getEventData = () => {
